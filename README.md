@@ -17,7 +17,7 @@ This PowerShell script searches for a specified keyword or pattern in a given fi
 To run the script, use the following syntax:
 
 ```powershell
-.\SearchScript.ps1 -File 'file.txt' -Search 'search keyword' [-OutputFile 'results.txt'] [-ResultCount 10]
+.\script.ps1 -File 'file.txt' -Search 'search keyword' [-OutputFile 'results.txt'] [-ResultCount 10]
 ```
 
 ### Parameters
@@ -30,7 +30,7 @@ To run the script, use the following syntax:
 ### Example
 
 ```powershell
-.\SearchScript.ps1 -File 'example.txt' -Search 'keyword' -OutputFile 'results.txt' -ResultCount 5
+.\script.ps1 -File 'example.txt' -Search 'keyword' -OutputFile 'results.txt' -ResultCount 5
 ```
 
 ## Error Handling
