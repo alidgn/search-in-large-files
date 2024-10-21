@@ -1,7 +1,7 @@
 param (
-    [string]$File,  # The path to the input file to search through
-    [string]$Search,  # The keyword or pattern to search for in the file
-    [string]$OutputFile = 'results.txt',  # The output file where results will be saved (default is 'results.txt')
+    [string]$File, # The path to the input file to search through
+    [string]$Search, # The keyword or pattern to search for in the file
+    [string]$OutputFile = 'results.txt', # The output file where results will be saved (default is 'results.txt')
     [int]$ResultCount = 10  # Maximum number of results to return (default is 10)
 )
 
@@ -30,8 +30,10 @@ Get-Content $File | ForEach-Object {
 
         # Increment the found results counter
         if (++$found -eq $ResultCount) {
-            Write-Host "$found matches have been saved to '$OutputFile'." -ForegroundColor Green
-            break;  # Exit the loop if the result count limit is reached
+            # Write-Host "$found matches have been saved to '$OutputFile'." -ForegroundColor Green
+            break; # Exit the loop if the result count limit is reached
         }
     }
 }
+
+Write-Host "$found matches have been saved to '$OutputFile'." -ForegroundColor Green
