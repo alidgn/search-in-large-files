@@ -1,4 +1,4 @@
-# Search In Large Files Script
+# Search in Large Files Script
 
 This PowerShell script searches for a specified keyword or pattern in a given file and saves the matching lines to an output file.
 
